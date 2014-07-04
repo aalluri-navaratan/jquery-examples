@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>jQuery Hello World Alert box</title>
+<!--<script type="text/javascript" src="jquery-1.4.2.js"></script>  -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script type="text/javascript">
+$(document).ready(function(){
+
+//$("#list1").html("<li>This is A new list  item</li>"");
+//var newItem = $("<p>This is a new paragrapg</p>");
+//$("#para2").html(newItem.html());
+$("p:last").text("This is The lost paragrapg")
+});
+</script>
+<style type="text/css">
+  .a { color: navy;}
+  .b { color: Maroon;}
+</style>
+</head>
+<body>
+<ul id="list1">
+    <li class="a">itema 1</li>
+    <li class="a">itema 2</li>
+    <li class="b">itema 3</li>
+    <li class="b">itema 4</li>
+</ul>
+<p class="a">This is paragrapg 1</p>
+<p id="para2">This is paragrapg 2</p>
+<p class="b">This is paragrapg 3</p>
+<p>This is paragrapg 4</p>
+</body>
+</html>
