@@ -1,0 +1,21 @@
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#data").click(function(){
+    var mytable =' '  ;
+    $.getJSON("result.json",function(ss){
+      $.each(ss, function(k, field){
+        mytable += field.uname;
+      });
+    $("#json").html(mytable);
+    });
+  });
+});
+</script>
+</head>
+<body>
+<button id="data">Load JSON </button>
+<div id="json"></div>
+</body>
+</html>
