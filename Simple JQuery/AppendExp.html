@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>jQuery Hello World Alert box</title>
+<!--<script type="text/javascript" src="jquery-1.4.2.js"></script>  -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script type="text/javascript">
+$(document).ready(function(){
+
+//$("p").append(" with some paragrapg");
+//$("p").prepend("hello !");
+//$("p:last").appendTo("p:first");
+$("p:last").prependTo("p:first");
+
+});
+</script>
+<style type="text/css">
+  .a { color: navy;}
+  .b { color: Maroon;}
+</style>
+</head>
+<body>
+<ul id="list1">
+    <li class="a">itema 1</li>
+    <li class="a">itema 2</li>
+    <li class="b">itema 3</li>
+    <li class="b">itema 4</li>
+</ul>
+<p class="a">This is paragrapg 1</p>
+<p class="b">This is paragrapg 3</p>
+</body>
+</html>
