@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+  
+  $(function(){
+      $("div").hover(highlight,highlight);
+      $("div").click(fnClick1);
+      $("div").dbclick(hover(fnClick2));
+       
+  });
+    function highlight(evt){
+      $("div").toggleClass("highlight");
+    }
+     function fnClick1(evt){
+       $("div").html("<h1>ANIL KUMAR<h1>");
+     }
+     function fnClick2(evt){
+       $("div").html("<h2>ANIL KUMAR . ALLURI<h2>");
+     }
+
+  </script>
+<style type="text/css">
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+  div{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    border: 20px ridge #foo;
+  }
+  .highlight
+  {
+    background-color: yellow;
+  }
+</style>
+</head>
+<body>
+
+<button id="slideup">slide up</button><br>
+<button id="slidedown">slide down</button><br>
+<button id="slidetoggle">slide toggle</button>
+<div>Anil Kumar .Alluri</div>
+
+</body>
+</html>

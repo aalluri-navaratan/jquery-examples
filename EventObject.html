@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+  
+  $(function(){
+      $("div").click(function(evt){
+        $(this).html("pageX ----->" + evt.pageX + "<br>pageY ----->"+evt.pageY+"<br>type------>"+evt.type+"<br>target ------>"+evt.target);
+        });
+   });
+</script>
+<style type="text/css">
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+  div{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    border: 20px ridge #foo;
+  }
+  .highlight
+  {
+    background-color: yellow;
+  }
+</style>
+</head>
+<body>
+
+<button id="slideup">slide up</button><br>
+<button id="slidedown">slide down</button><br>
+<button id="slidetoggle">slide toggle</button>
+<div>Anil Kumar .Alluri</div>
+
+</body>
+</html>

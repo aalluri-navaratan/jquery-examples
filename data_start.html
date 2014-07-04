@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("div").data("greeting", "Hello World");
+  });
+  $("#btn2").click(function(){
+    //alert($("div").data("greeting"));
+    alert(JSON.stringify($("div").data(),null," "));
+
+
+  });
+});
+</script>
+</head>
+<body>
+
+<button id="btn1">Attach data to div element</button><br>
+<button id="btn2">Get data attached to div element</button>
+<div></div>
+
+</body>
+</html>

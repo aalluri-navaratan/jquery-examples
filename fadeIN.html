@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+     
+$(document).ready(function(){
+
+  $("#fadein").click(function(){
+    $("#theDiv").fadeIn("normal");
+  });
+  $("#fadeout").click(function(){
+    $("#theDiv").fadeOut(2000);
+  });
+  $("#fadeto").click(function(){
+    $("#theDiv").fadeTo(1000);
+  });
+
+  $("#fadeto3").click(function(){
+    $("#theDiv").fadeTo(1000, 0.3);
+  });
+
+});
+
+</script>
+<style type="text/css">
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+  div{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    border: 20px ridge #foo;
+  }
+  .highlight
+  {
+    background-color: yellow;
+  }
+</style>
+</head>
+<body>
+<div id="theDiv">Anil Kumar .Alluri</div>
+<button id="fadein">FadeIn</button>
+<button id="fadeout">FadeOut</button>
+<button id="fadeto">FadeTo</button>
+<button id="fadeto3">FadeTo 3</button>
+
+</body>
+</html>
