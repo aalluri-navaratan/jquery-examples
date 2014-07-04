@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+  <meat charset="utf-8">
+  <title>My Website</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- Bootstap-->
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://resources/demos/external/jquery.mousewheel.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+  <link rel="stylesheet" href="http://resources/demos/style.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <script src="js/respond.js"></script>
+  <script type="text/javascript">
+  $(function() {
+    var spinner = $( "#spinner" ).spinner();
+ 
+    $( "#disable" ).click(function() {
+      if ( spinner.spinner( "option", "disabled" ) ) {
+        spinner.spinner( "enable" );
+      } else {
+        spinner.spinner( "disable" );
+      }
+    });
+    $( "#destroy" ).click(function() {
+      if ( spinner.spinner( "instance" ) ) {
+        spinner.spinner( "destroy" );
+      } else {
+        spinner.spinner();
+      }
+    });
+    $( "#getvalue" ).click(function() {
+      alert( spinner.spinner( "value" ) );
+    });
+    $( "#setvalue" ).click(function() {
+      spinner.spinner( "value", 5 );
+    });
+ 
+    $( "button" ).button();
+  });
+  </script>
+</head>
+<body>
+<h2 class="demoHeaders">Accordion</h2>
+<div id="accordion">
+  <h3>First</h3>
+    <div>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+  <h3>Second</h3>
+    <div>Phasellus mattis tincidunt nibh.</div>
+  <h3>Third</h3>
+    <div>Nam dui erat, auctor a, dignissim quis.</div>
+</div>
+
+<div class="container">
+
+<!-- row 1 :navigation -->
+
+<div class="row">
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <button type="buttion" class="navbar-toggle" data-toggle="collapse data-target="#collapse">
+        <span class="sr-only">Total navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+       <div class="collapse navbar-collapse" id="collapse">
+       </div>
+    <ul class="nav nav-pills nav-justified">
+      <li><a href="#"><h5>Home</h5></a></li>
+      <li><a href="04.html"><h5>Services</h5></a></li>
+      <li><a href="#"><h5>Produts</h5></a></li>
+      <li><a href="#"><h5>Corporate</h5></a></li>
+      <li><a href="#"><h5>Contact-Us</h5></a></li>
+    </ul>
+  </nav>
+</nav>
+<!--row 1-->
+    <header class ="row">
+        <div class="col-lg-6 col-sm-5">
+            <a href="index.html"><img width="400" height="300" src="img/logo.png" alt="Wisdom Pets.Click for home." class="img-responsive"></a>
+        </div>
+    <div class="col-lg-6 col-sm-7">
+          <img src="img/animal.gif" alt="" class="hidden-xs">
+    </div>
+  </header>
+<!-- row 2 -->
+<div class ="row">
+  <article class="col-lg-offset-1 col-sm-offset-1 col-lg-8 col-sm-7 col-lg-push-3 col-sm- push-4">
+
+      <h1>Our Service </h1>
+      <p class="text-justify"> <img src="img/dog1.jpeg" class="pull-right img-responsive img-thumbnail">
+        We provide simple, creative and innovative web/mobile solutions, which enhances the life of user every day. While designing and developing these solutions, we take into account various aspects.</p><p>One of the most important aspects we consider is the user experience, which we strongly believe is what everything revolves around. Secondly, we focus on system performance, which helps the solution keep up with demand of users and finally, we consider a cost effective way of delivering the solution.ypur&rsquo;s
+      </p>
+  
+  <!-- row 3 -->
+  <div class="clearfix visible-xs visible-lg"></div>
+  <div class ="row">
+    
+    <div class="col-md-3 col-xs-6">
+        <div class="thumbnail">
+        <div class="caption">
+        <h4><span class="glyphicon glyphicon-ok img-thumbnail"></span>Web Applications</h4>
+        <p>We design and develop web based solutions which provides a rich and seamless user experience. We use the most advanced technology stack available, some of which are noted below: .</p>
+        <p><a href="#" class="btn-info">Read more>></a></p>
+        </div>
+        </div>
+    </div>
+        <div class="col-md-3 col-xs-6">
+        <div class="thumbnail">
+        <div class="caption">
+            <h4><span class="glyphicon glyphicon-heart img-thumbnail"></span>Mobile Applications</h4>    
+            <p>We design end-to-end applications for iOS and Android platforms. Providing the best user experience on mobiles is our top priority. We use some of the most promising frameworks to develop applications for mobile. Few of them are noted below: </p>
+            <p><a href="#" class="btn-info">Read more>></a></p>
+        </div>
+        </div>
+        </div>
+    <div class="col-md-3 col-xs-6">
+            <div class="thumbnail">
+            <div class="caption">
+              <h4><span class="glyphicon glyphicon-pushpin img-thumbnail"></span>
+              Cloud Ready Services</h4>
+               <p>We provide end-to-end secure and reliable cloud hosting and maintenance services based on your application needs. Our cloud services are backed by powerful Service level agreements which ensure users experience minimal to no down-time. We recommend and use the following cloud vendors based on your application needs. </p>
+               <p><a href="#" class="btn-info">Read more>></a></p>
+            </div>
+            </div>
+     </div>
+        <div class="col-md-3 col-xs-6">
+            <div class="thumbnail">
+            <div class="caption">
+                 <h4>
+                 <span class="glyphicon glyphicon-cutlery img-thumbnail"></span><h4>A dog fish  cured our fish</h4>
+                  <p>lse. Doesn't  here is a logo, with a decorative picture next to it.</p>
+                  <p>I'm g and you're going to see the default page. So, what you see here is a logo, with a decorative picture next to it.</p>
+              
+                  <p><a href="#" class="btn-info">Read more>></a></p>
+            </div>
+            </div>
+        </div>
+
+  </article>
+   <aside class="col-lg-3 col-sm-4 col-lg-pull-9 col-sm-pull-8">
+     <!--
+     <div class="panel panel-primary">
+        <div class="panel-heading">
+         <h1>Bootstarp Information </h1>
+        </div>
+        <div class="panel-body">
+        <p>Meet Bootstrap, the one-stop shop for designing sleek, mobile-ready websites with HTML5, CSS3, and JavaScript. It's an open-source, responsive design framework, featuring a grid-based layout system, web-ready icons you can incorporate into your designs, fully functional navigation, and much more. Join Jen Kramer for a quick overview of all of the goodies in Bootstrap, and then learn how to customize the grid, override the CSS to customize your site, and leverage Bootstrap's stylish built-in JavaScript effects. </p>
+        </div>
+      </div>
+      -->
+      <h3>About Our Services </h3>
+            <!-- row 1 :navigation -->
+               <h4> <ul class="nav nav-pills nav-stacked">
+                  <li class="active"><a href="#">Vaccinations</a></li>
+                  <li><a href="#">Checkups</a></li>
+                  <li><a href="#">Senior Pets</a></li>
+                  <li><a href="#">Diet Plans</a></li>
+                </ul>
+              </h4>
+
+<h2 class="demoHeaders">Accordion</h2>
+<div id="accordion">
+  <h3>First</h3>
+    <div>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+  <h3>Second</h3>
+    <div>Phasellus mattis tincidunt nibh.</div>
+  <h3>Third</h3>
+    <div>Nam dui erat, auctor a, dignissim quis.</div>
+</div>
+   </aside>
+<!-- row 4 -->
+ 
+  </div>
+
+</div><!--close container -->
+
+ <footer class="row"><p>&copy; Copyright 2014 by Navaratan Technologies. All Rights Reserved.  </p>
+  </footer>
+</body>
+</html>
